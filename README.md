@@ -25,7 +25,10 @@ The NVIDIA card handles the rendering and passes the framebuffer to the ATI card
 
 You need to create two configuration files as follows:
 
-#### `/etc/X11/xorg.conf.d/99-radeon.conf`:
+#### `99-radeon.conf`:
+```bash
+nano /etc/X11/xorg.conf.d/99-radeon.conf
+```
 ```plaintext
 Section "Device"
     Identifier "Radeon"
@@ -58,7 +61,10 @@ Section "ServerLayout"
 EndSection
 ```
 
-#### `/etc/X11/xorg.conf.d/98-prime.conf`:
+#### `98-prime.conf`:
+```bash
+nano /etc/X11/xorg.conf.d/98-prime.conf
+```
 ```plaintext
 Section "ServerLayout"
     Identifier "layout"
