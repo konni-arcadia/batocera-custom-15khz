@@ -1,12 +1,12 @@
 # Batocera 15kHz Setup Guide
 
-This guide explains how to configure a Batocera setup for a 15kHz CRT display using a reverse-prime configuration. This setup is tailored for an x86_64 system with the following hardware:
+This guide explains how to configure a Batocera setup for a 15kHz CRT display using a reverse-prime configuration. This setup is tailored for an x86_64 system with the following hardware. Note that this guide is specific to my configuration and has not been tested on other setups.
 
 ## Hardware Configuration
 
 - **Motherboard**: Gigabyte Z170X-Gaming 7
 - **Graphics Cards**:
-  - NVIDIA 2080 (primary, in the first PCIe slot, connected to an LCD display (only used when booting on my windows setup))
+  - NVIDIA 2080 (primary, in the first PCIe slot, connected to an LCD display (only used when booting on my Windows setup))
   - ATI HD 4850 (secondary, in the second PCIe slot, connected to a JVC DT-V1700CG CRT via a DVI-VGA adapter and a VGA to BNC cable)
 
 ## Overview
