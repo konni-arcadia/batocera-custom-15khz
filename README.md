@@ -6,7 +6,7 @@ This guide explains how to configure a Batocera setup for a 15kHz CRT display us
 
 - **Motherboard**: Gigabyte Z170X-Gaming 7
 - **Graphics Cards**:
-  - NVIDIA 2080 (primary, in the first PCIe slot, connected to an LCD display (only used when booting on my Windows setup))
+  - NVIDIA RTX 2080 Ti (primary, in the first PCIe slot, connected to an LCD display (only used when booting on my Windows setup))
   - ATI HD 4850 (secondary, in the second PCIe slot, connected to a JVC DT-V1700CG CRT via a DVI-VGA adapter and a VGA to BNC cable)
 
 ## Overview
@@ -126,5 +126,28 @@ After creating the configuration files:
 Run the CRT configuration script from https://github.com/ZFEbHVUE/Batocera-CRT-Script:
 
 ### 6. Reboot the System
+
+---
+
+## Notes on Compatibility and Observations
+
+### Known Issues
+
+1. **Steam**:
+   - Unable to launch from the main menu.
+   - However, it can be launched from the "Ports" menu.
+
+2. **Quake 2 RTX**:
+   - Does not launch at all.
+
+3. **Doom 2016**:
+   - The main menu is accessible but runs below 1 FPS.
+
+### Observations with PCSX2
+
+- PCSX2 displays the currently used GPU.
+  - When using **OpenGL**, the ATI card is utilized.
+  - Switching to **Vulkan** makes the NVIDIA card handle rendering.
+- Despite GPU switching, performance is consistent for some games (e.g., *Devil May Cry* runs at 60 FPS in both scenarios).
 
 ---
