@@ -37,13 +37,6 @@ Section "Device"
     Option "PrimaryGPU" "true"
 EndSection
 
-Section "Monitor"
-    Identifier "CRTMonitor"
-    Option "PreferredMode" "640x480"
-    HorizSync 31.5
-    VertRefresh 60.0
-EndSection
-
 Section "Screen"
     Identifier "Screen0"
     Device "Radeon"
